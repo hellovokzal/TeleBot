@@ -20,9 +20,9 @@ def start(message):
 
 def help(message):
 
-    bot.send_nessage(message.chat.id, "Помощь:\n/check <Ваша ссылка>")
+    bot.send_message(message.chat.id, "Помощь:\n/check <Ваша ссылка>")
 
-@bot.message_handler(clmmands=['check'])
+@bot.message_handler(commands=['check'])
 
 def checking():
 
