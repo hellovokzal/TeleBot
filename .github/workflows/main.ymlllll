@@ -5,4 +5,4 @@ services:
     volumes:
       - .:/app
     command: pip install telebot threading requests
-    command: python CheckHost.py
+    command: python CheckH
