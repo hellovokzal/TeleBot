@@ -28,20 +28,20 @@ def help(message):
 
 def check(message):
 
-        url = message.text[8:len(message.text)]
+    url = message.text[8:len(message.text)]
 
-        user = message.chat.id
+    user = message.chat.id
 
-        try:
+    try:
 
-            url = requests.get(url)
+        url = requests.get(url)
 
-            bot.send_message(user, "Сайт работает!")
+        bot.send_message(user, "Сайт работает!")
 
-        except:
+    except:
 
-            bot.send_message(user, "Сайт не работает!")
+        bot.send_message(user, "Сайт не работает!")
 
-start = threading.Thread(target=checking) 
+
 
 bot.polling()
