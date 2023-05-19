@@ -38,7 +38,7 @@ jobs:
 
         env:
 
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          URL: ${{ secrets.URL }}
 
         run: python bot.py
 
