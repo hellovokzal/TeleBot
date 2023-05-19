@@ -28,7 +28,7 @@ def help(message):
 
 def check(message):
 
-    url = message.text[8:len(message.text)]
+    url = message.text[7:len(message.text)]
 
     user = message.chat.id
 
