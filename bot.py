@@ -24,9 +24,9 @@ def help(message):
 
 @bot.message_handler(commands=['check'])
 
-def checking():
 
-    def check(message):
+
+def check(message):
 
         url = message.text[8:len(message.text)]
 
