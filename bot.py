@@ -33,10 +33,10 @@ def check(message):
     user = message.chat.id
 
     try:
+        while True:
+            url = requests.get(url)
 
-        url = requests.get(url)
-
-        bot.send_message(user, "Сайт работает!")
+            bot.send_message(user, "Сайт работает!")
 
     except:
 
