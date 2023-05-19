@@ -31,14 +31,14 @@ def check(message):
     url = message.text[7:len(message.text)]
 
     user = message.chat.id
+    while True:
+        try:
+            while True:
+                url = requests.get(url)
 
-    try:
-        while True:
-            url = requests.get(url)
+                bot.send_message(user, "Сайт работает!")
 
-            bot.send_message(user, "Сайт работает!")
-
-    except:
+        except:
 
         bot.send_message(user, "Сайт не работает!")
 
